@@ -1,0 +1,27 @@
+.ocultarToast {
+    position: absolute;
+    z-index: 99;
+    right: 50%;
+}
+
+.inputSinBordes {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.contornoDiv{
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+
+.tituloCenter{
+
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    background: #A9BCF5;
+
+}

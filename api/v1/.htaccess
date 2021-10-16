@@ -1,0 +1,6 @@
+#<IfModule mod_deflate.c>
+#AddOutputFilterByType DEFLATE application/json # Add any mime-type you think is appropriate here AddOutputFilterByType DEFLATE application/json
+#</IfModule>
+
+php_flag zlib.output_compression On
+php_value zlib.output_compression_level 2

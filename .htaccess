@@ -1,0 +1,28 @@
+## - Borrar hacia la izquierda <          <IfModule mod_rewrite.c>
+## - Borrar hacia la izquierda <          RewriteEngine on
+## - Borrar hacia la izquierda <          Options +FollowSymlinks
+## - Borrar hacia la izquierda <
+## - Borrar hacia la izquierda <          ## Reglas basicas
+## - Borrar hacia la izquierda <          RewriteCond %{REQUEST_URI} !maintenance.html$
+## - Borrar hacia la izquierda <          RewriteCond %{REQUEST_URI} !^.*(\.js|\.gif|\.jpg|\.png|\.css)$
+## - Borrar hacia la izquierda <
+## - Borrar hacia la izquierda <          ## IP Publica para poder acceder
+## - Borrar hacia la izquierda <          ##RewriteCond %{REMOTE_ADDR} !^60\.31\.50\.29
+## - Borrar hacia la izquierda <
+## - Borrar hacia la izquierda <          RewriteRule .* /almacen-farmacia/maintenance.html [R=302,L,QSD]
+## - Borrar hacia la izquierda <          </IfModule>
+
+
+
+
+
+
+#RewriteBase /
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}.html -f
+#RewriteRule ^(.*)$ $1.html
+
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}.php -f
+#RewriteRule ^(.*)$ $1.php

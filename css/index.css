@@ -1,0 +1,33 @@
+img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+body{
+    background: url("../img/fondo.jpeg") no-repeat center top;
+    background-size: cover;
+}
+
+nav.navbar ul li a:hover{
+    background: #99A3A4;
+}
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 6px;
+    top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: .1rem;
+    margin-right: .1rem;
+}lo
